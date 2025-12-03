@@ -1,0 +1,55 @@
+1) Stock Price Data (for returns, heatmap, S0)
+Source:
+
+✔ Yahoo Finance via yfinance API
+
+Used for:
+
+intraday prices (5 days, 30m interval)
+
+daily prices (1 year)
+
+real-time-ish current spot price
+
+historical price series
+
+2) Option Chain Data (strikes, expiry, lastPrice)
+Source:
+
+✔ Yahoo Finance option chain feed via yfinance
+
+Used for:
+
+strike prices
+
+call/put option type
+
+current market option price
+
+expiration dates
+
+3) Risk-Free Rate
+Currently:
+
+✔ Hard-coded: r = 0.05
+
+But could be changed to:
+
+US Treasury 1-month yield
+
+Fed Funds rate
+
+SOFR
+
+or auto-fetch from FRED API
+
+4) Volatility & drift estimation
+Source:
+
+✔ Computed by YOU from daily historical price data:
+
+µ annualized = mean return × 252
+
+σ annualized = std.dev × sqrt(252)
+
+These are derived values, not externally provided.
