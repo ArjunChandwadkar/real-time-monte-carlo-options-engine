@@ -1,0 +1,31 @@
+Ensure Python 3.10+ is installed on your system.
+
+Create and activate a virtual environment for the project.
+
+Install the project dependencies listed in requirements.txt.
+
+Run the main script to execute the full pipeline.
+
+The script will automatically:
+
+pull real-time stock prices
+
+build an intraday correlation heatmap
+
+fetch live option chains for each ticker
+
+simulate Monte Carlo price paths
+
+compute terminal price distributions
+
+price calls and puts for multiple strikes
+
+detect mispricing vs market
+
+display visual plots
+
+export results to mc_options_pricing_multi_ticker_realtime.csv
+
+The generated CSV can be opened directly in Excel for further analysis.
+
+The heatmap image is saved as correlation_heatmap_intraday.png.
